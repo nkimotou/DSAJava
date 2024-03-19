@@ -1,6 +1,8 @@
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Solution {
+public class TwoSum {
     // example in leetcode book
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -13,11 +15,9 @@ public class Solution {
         }
         throw new IllegalArgumentException("No solution");
     }
-}
 
-public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        TwoSum solution = new TwoSum();
 
         // Example input array and target
         int[] nums = {2, 7, 11, 15};
